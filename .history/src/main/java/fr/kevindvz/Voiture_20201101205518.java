@@ -27,6 +27,7 @@ public class Voiture extends Vehicule {
         } else {
             System.out.println("Réserve de carburant à moitié pleine. Pensez à faire le plein.");
         }
+        System.out.println(this.niveauCarburant);
 
     }
 

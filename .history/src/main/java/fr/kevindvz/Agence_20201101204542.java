@@ -67,7 +67,7 @@ public class Agence {
             if (this.stockActuel[numeroVehicule].disponible == false) {
                 this.stockActuel[numeroVehicule].disponible = true;
                 ((Voiture) this.stockActuel[numeroVehicule]).niveauCarburant /= 2;
-                System.out.println(this.stockActuel[numeroVehicule].marque + " a réintégré le stock de "
+                System.out.println(this.stockActuel[numeroVehicule].marque + "a réintégré le stock de "
                         + this.adresse.ville + ".");
             } else if (this.stockActuel[numeroVehicule].disponible == true) {
                 System.out.println(

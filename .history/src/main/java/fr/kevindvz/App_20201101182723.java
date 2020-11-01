@@ -61,13 +61,13 @@ public final class App {
         // Création des agences
 
         Agence agenceRennes = new Agence(emplacementRennes);
-        Agence agenceNantes = new Agence(emplacementNantes);
+        Agence agenceNantes = new Agence(emplacementRennes);
         Agence agenceBrest = new Agence(emplacementBrest);
 
         // Ajout de vehicules dans les stocks
 
         agenceBrest.ajoutVehicule(sportBike1, funCar, cityCar);
-        agenceNantes.ajoutVehicule(sportCar2, bigCar, sportBike2, miniBike);
+        agenceNantes.ajoutVehicule(sportCar2, bigCar);
         agenceRennes.ajoutVehicule(sportBike2, electricBike);
 
         // Ajout des options dans les véhicules des véhicules des stocks
@@ -84,16 +84,5 @@ public final class App {
         // Location des véhicules
         agenceBrest.louerVehicule(2, hamza);
         agenceBrest.louerVehicule(2, gino);
-        ((Voiture) agenceBrest.stockActuel[2]).controleReserveCarburant();
-        agenceNantes.louerVehicule(3, franck);
-        agenceNantes.louerVehicule(5, elodie);
-
-        // Retour véhicules et controle du Carburant
-
-        agenceBrest.retournerVehicule(2);
-        ((Voiture) agenceBrest.stockActuel[2]).controleReserveCarburant();
-        ((Voiture) agenceBrest.stockActuel[2]).fairePlein();
-        ((Voiture) agenceBrest.stockActuel[2]).controleReserveCarburant();
-
     }
 }

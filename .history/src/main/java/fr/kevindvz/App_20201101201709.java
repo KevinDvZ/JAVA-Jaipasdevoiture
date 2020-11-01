@@ -85,15 +85,5 @@ public final class App {
         agenceBrest.louerVehicule(2, hamza);
         agenceBrest.louerVehicule(2, gino);
         ((Voiture) agenceBrest.stockActuel[2]).controleReserveCarburant();
-        agenceNantes.louerVehicule(3, franck);
-        agenceNantes.louerVehicule(5, elodie);
-
-        // Retour véhicules et controle du Carburant
-
-        agenceBrest.retournerVehicule(2);
-        ((Voiture) agenceBrest.stockActuel[2]).controleReserveCarburant();
-        ((Voiture) agenceBrest.stockActuel[2]).fairePlein();
-        ((Voiture) agenceBrest.stockActuel[2]).controleReserveCarburant();
-
     }
 }

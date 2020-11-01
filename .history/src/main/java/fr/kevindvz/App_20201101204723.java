@@ -68,7 +68,7 @@ public final class App {
 
         agenceBrest.ajoutVehicule(sportBike1, funCar, cityCar);
         agenceNantes.ajoutVehicule(sportCar2, bigCar, sportBike2, miniBike);
-        agenceRennes.ajoutVehicule(sportBike2, electricBike);
+        agenceRennes.ajoutVehicule(sportBike2, electricBike, bigCar);
 
         // Ajout des options dans les véhicules des véhicules des stocks
 
@@ -87,12 +87,7 @@ public final class App {
         ((Voiture) agenceBrest.stockActuel[2]).controleReserveCarburant();
         agenceNantes.louerVehicule(3, franck);
         agenceNantes.louerVehicule(5, elodie);
-
-        // Retour véhicules et controle du Carburant
-
         agenceBrest.retournerVehicule(2);
-        ((Voiture) agenceBrest.stockActuel[2]).controleReserveCarburant();
-        ((Voiture) agenceBrest.stockActuel[2]).fairePlein();
         ((Voiture) agenceBrest.stockActuel[2]).controleReserveCarburant();
 
     }

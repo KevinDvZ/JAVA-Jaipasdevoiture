@@ -59,24 +59,8 @@ public class Agence {
         }
     }
 
-    public void retournerVehicule(int numeroVehicule) {
-        System.out.println("");
-        System.out.println("Retour véhicule demandé.");
-        if ((numeroVehicule >= 0) && (numeroVehicule < this.stockActuel.length)) {
+    public void retournerVehicule() {
 
-            if (this.stockActuel[numeroVehicule].disponible == false) {
-                this.stockActuel[numeroVehicule].disponible = true;
-                ((Voiture) this.stockActuel[numeroVehicule]).niveauCarburant /= 2;
-                System.out.println(this.stockActuel[numeroVehicule].marque + " a réintégré le stock de "
-                        + this.adresse.ville + ".");
-            } else if (this.stockActuel[numeroVehicule].disponible == true) {
-                System.out.println(
-                        this.stockActuel[numeroVehicule].marque + "déjà dans le stock de" + this.adresse.ville);
-            } else {
-                System.out.println("Emplacement du véhicule inexistant dans le stock.");
-            }
-            ;
-
-        }
     }
+
 }

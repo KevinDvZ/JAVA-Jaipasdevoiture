@@ -68,7 +68,7 @@ public final class App {
 
         agenceBrest.ajoutVehicule(sportBike1, funCar, cityCar);
         agenceNantes.ajoutVehicule(sportCar2, bigCar, sportBike2, miniBike);
-        agenceRennes.ajoutVehicule(sportBike2, electricBike);
+        agenceRennes.ajoutVehicule(sportBike2, electricBike, bigCar);
 
         // Ajout des options dans les véhicules des véhicules des stocks
 
